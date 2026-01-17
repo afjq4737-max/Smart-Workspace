@@ -1,0 +1,55 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B8CFF"/>
+      <stop offset="50%" stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#3FB950"/>
+    </linearGradient>
+    <linearGradient id="logo-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7931E"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#logo-gradient)" filter="url(#glow)"/>
+  
+  <!-- Workspace Grid -->
+  <rect x="12" y="16" width="40" height="32" rx="4" fill="white" opacity="0.9"/>
+  
+  <!-- Grid Lines -->
+  <line x1="12" y1="24" x2="52" y2="24" stroke="url(#logo-gradient)" stroke-width="1"/>
+  <line x1="12" y1="32" x2="52" y2="32" stroke="url(#logo-gradient)" stroke-width="1"/>
+  <line x1="12" y1="40" x2="52" y2="40" stroke="url(#logo-gradient)" stroke-width="1"/>
+  <line x1="24" y1="16" x2="24" y2="48" stroke="url(#logo-gradient)" stroke-width="1"/>
+  <line x1="40" y1="16" x2="40" y2="48" stroke="url(#logo-gradient)" stroke-width="1"/>
+  
+  <!-- Task Cards -->
+  <rect x="14" y="18" width="8" height="4" rx="1" fill="url(#logo-gradient)"/>
+  <rect x="26" y="18" width="12" height="4" rx="1" fill="url(#logo-accent)"/>
+  <rect x="42" y="18" width="8" height="4" rx="1" fill="url(#logo-gradient)"/>
+  
+  <rect x="14" y="26" width="6" height="4" rx="1" fill="url(#logo-accent)"/>
+  <rect x="26" y="26" width="10" height="4" rx="1" fill="url(#logo-gradient)"/>
+  
+  <rect x="14" y="34" width="8" height="4" rx="1" fill="url(#logo-gradient)"/>
+  <rect x="42" y="34" width="8" height="4" rx="1" fill="url(#logo-accent)"/>
+  
+  <rect x="26" y="42" width="12" height="4" rx="1" fill="url(#logo-gradient)"/>
+  
+  <!-- Connection Lines -->
+  <path d="M18 22 Q32 28 46 22" stroke="url(#logo-accent)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M18 38 Q32 32 46 38" stroke="url(#logo-gradient)" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Sparkle Effects -->
+  <circle cx="56" cy="12" r="2" fill="url(#logo-accent)" opacity="0.8"/>
+  <circle cx="8" cy="52" r="1.5" fill="url(#logo-gradient)" opacity="0.6"/>
+  <circle cx="56" cy="56" r="1" fill="white" opacity="0.8"/>
+</svg>
